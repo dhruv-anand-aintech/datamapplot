@@ -1,0 +1,6 @@
+<div id="force-graph-container" style="width: 100%; height: 600px;"></div>
+<script>
+    const forceGraphData = JSON.parse('{{ force_graph_data | safe }}');
+    const container = document.getElementById('force-graph-container');
+    createForceGraph(forceGraphData, container);
+</script>
